@@ -23,7 +23,7 @@ body{
    border: 2px solid #fff;
    background: white;
    width: 200px;
-   box-shadow:-5px 4px 5px #373838 ;
+   box-shadow:-3px 3px 2px #9d9f9f ;
 }
 .header-icons a{
    margin-left:8px ;
@@ -38,22 +38,22 @@ body{
 }
 
 
-.header-icons a:first-child:hover i{
+.header-icons a:first-child i{
    color:rgb(13,16,233) ;
 }
-.header-icons a:nth-child(2):hover i{
+.header-icons a:nth-child(2) i{
    color: rgb(9,177,228);
 
 }
-.header-icons a:nth-child(3):hover i{
+.header-icons a:nth-child(3) i{
    color:rgb(37, 153, 248) ;
 
 }
-.header-icons a:nth-child(4):hover i{
+.header-icons a:nth-child(4) i{
    color:rgb(240,10,201);
 
 }
-.header-icons a:last-child:hover i{
+.header-icons a:last-child i{
    color: red;
 }
 header{
@@ -61,9 +61,10 @@ header{
    z-index: 1;
    height: 148px;
    position: relative;
-   background-color: rgb(68, 68, 68);
+   background-image:linear-gradient(to right, #DDE6ED,#19376D) ;
 }
 .heading{
+   
    height: 12px;
    display: flex;
    padding-top: 6px;
@@ -72,6 +73,7 @@ header{
    justify-content: space-between;
 }
 .nguoiban{
+   margin-left: 140px;
    display: flex;
    justify-content: flex-start
 
@@ -100,7 +102,9 @@ header{
 .nguoiban i:hover{
    color: rgb(35, 88, 235);
    transform: scale(1.3);
+   
 }
+
 .nguoiban .fa-instagram:hover{
    color:rgb(238, 107, 238);
    transform: scale(1.3);
@@ -130,6 +134,21 @@ header{
 .ungdung i{
    color: white;
 }
+.ungdung button{
+   font-weight: bold;
+   color: white;
+   background-color:#27374D;
+   padding: 4px;
+   cursor: pointer;
+   border-radius: 10%;
+   box-shadow: 4px 3px 2px;
+   border-color: #27374D;
+
+}
+.ungdung button:hover{
+   transform: scale(1.2) ;
+  
+}
 .thanheading{
    padding-top: 10px;
    display: flex;
@@ -145,22 +164,19 @@ header{
    justify-content: space-around;
 }
 .thanheading-anh img{
-   width: 94px;
+   position: absolute;
+   left: 0;
+   top: -15px;
+   width: 145px;
    height:auto;
+   
 }
-.thanheading-anh h4{
-   color: rgb(69, 226, 218);
-   padding: 2px 0;
-   margin-top: 10px;
-   font-weight: bold;
-   font-family: Arial, Helvetica, sans-serif;
-   letter-spacing: 2px;
-   border-radius: 4px;
-   font-size: 18px;
-   border: 1px solid rgb(68, 68, 68);
-   box-shadow: 5px 6px 5px rgb(36, 36, 36),
-   -4px -4px 4px rgb(161, 161, 161);
+.thanheading-timkiem{
+   position: absolute;
+   top:40px;
+   left: 120px;
 }
+
 .container-1{
    vertical-align: middle;
    white-space: nowrap;
@@ -174,7 +190,7 @@ header{
    border: none;
    font-size: 10pt;
    float: left;
-   color: #63717f;
+   color: rgb(17, 166, 231);
    padding-left: 45px;
    -webkit-border-radius: 5px;
    -moz-border-radius: 5px;
@@ -202,46 +218,56 @@ header{
    margin-top: 15px;
    z-index: 1;
    font-size: larger;
-   color: #4f5b66;
+   color: #19376D;
    cursor: pointer;
 }
 
 .thanheading-timkiem-navbar{
    width: 700px;
    position: absolute;
-   top:82%;
-   left: 27%;
+   top:100px;
+   left: 330px;
    display: flex;
    justify-content: space-around;
 }
 .thanheading-timkiem-navbar li{
    list-style: none;
    padding: 2px 3px;
+   font-weight: 400;
+   color: white;
+   background-color: #27374D;
+   padding: 2px;
+   cursor: pointer;
+   border-radius: 10%;
+   box-shadow: 2px 2px 2px;
+   border-color: #27374D;
 }
-.thanheading-timkiem-navbar li:hover{
-   border: 1px solid rgb(68, 68, 68);
-   box-shadow: 2px 3px 3px rgb(43, 42, 42),
-   -2px -3px 3px rgb(161, 161, 161);
-   border-bottom-right-radius: 8px;
-} 
+
+ 
+   
+
 .thanheading-timkiem-navbar li:hover a{
-   color:rgb(238, 107, 238);
-}
+  color: white
+   }
 .thanheading-timkiem-navbar a{
    text-decoration: none;
    color: white;
    font: 12px;
 }
 header .fa-shopping-cart{
-   font-size: 28px;
-   color: rgb(60, 214, 207);
+   font-size: 35px;
+   color: white;
    position:absolute;
    right: 100px;
    bottom: 30px;
    cursor: pointer;
+   
+   
 }
 .fa-shopping-cart:hover{
-   transform: translateY(-1.3px);
+   transform: scale(1.3);
+   color: rgb(17, 166, 231);
+   box-shadow: 2px 3px 0 rgb(17, 166, 231);
 }
 
 
@@ -356,14 +382,85 @@ main{
    margin-top: 14px;
    background-color: rgb(241, 239, 239);
 }
+.grid-col{
+   margin-top: 16px;
+   height: 400px;
+   background: #fff;
+   border: 2px solid #fff;
+   text-align: center;
+   border-radius: 14px;
+   color: white;
+ }
+.grid-col h3{
+   font-weight: bold;
+   font-size: 22px;
+   margin-top: 18px;
+}
+.col-img{
+   display: block;
+   height: 200px;
+  
+   padding: 10px 10px;
+   position: relative;
+   border-radius: 4px;
+   overflow: hidden;
+}
+.col-img img{
+   width: 300px;
+   height: 200px;
+   border-radius: 4px;
+   margin-bottom: 12px;
+   cursor: pointer;
+   transition: all 0.3s ease-in-out ;
+          
+}
+.col-img img:hover{
+   transform: scale(1.9);
+   filter:  saturate(120%);
+   filter: brightness(110%);
+}
 
+.grid-col:first-child{
+   background: #A5D7E8;
+}
+.grid-col:nth-child(2){
+   background:#576CBC;
+   
+}
+.grid-col:nth-child(3){
+   background:#19376D;
+}
+.grid-col:last-child {
+   background:#0B2447 ;
+}
+.img-color1{
+  background:#A5D7E8 ;
+}
+.img-color2{
+   background:#576CBC ;
+}
+.img-color3{
+   background:#19376D ;
+}
+.img-color4 {
+   background:#0B2447 ;
+}
 
+.grid-col .col-content{
+   margin-top: 10px;
+   font-size: 12px;
+   font-weight: bold;
+   color: white;
+}
+.danhmuc{
+   margin-top: 14px;
+}
 .danhmuc h3{
    font-size: 20px;
-   font-weight: bold;
+   font-weight: 600;
    letter-spacing: 1px;
    color: #333;
-   margin-left: 12px;
+   margin-left: 0px;
 }
 .l-1-10{
    background-color:white;
@@ -429,9 +526,11 @@ main{
 }
 main .banner{
    width: 90%;
-   height: 130px;
-   margin: 10px 76px;
+   height: 250px;
+   margin: 10px 60px;
 }
+
+
 
 /*xuhuongtieudung*/
 .l-2-4{
@@ -485,7 +584,59 @@ main .banner{
    border: 0.4px solid rgb(182, 181, 181);
 }
 
+.tuvan{
+   width: 100%;
+   height: 400px;
+   background-image:linear-gradient(to right, #DDE6ED,#19376D);
+   display: flex;
+   flex-direction:column;
+   justify-content: space-around;
+   align-items: center;
+   text-align: center;
 
+}
+.tuvan h4{
+   margin-top: 22px;
+   font-size: 36px;
+   font-weight: bold;
+   color: white;
+   letter-spacing: 1px;
+}
+.tuvan p{
+   font-size: 20px;
+   color: white;
+   margin-top: 14px;
+
+}
+.tuvan .user{
+   margin-top: 20px;
+   display: flex;
+   justify-content: center;  
+}
+.tuvan .user ul{
+  width: 200px;
+}
+.tuvan h3{
+   color: white;
+}
+
+.tuvan li{
+   list-style: none;
+   display: flex;
+   margin: 2px 0;
+   flex-direction: column;
+   flex: start;
+   font-weight: bold;
+   padding: 2px;
+   border: 1px solid rgb(17, 166, 231);
+   background-color: rgb(17, 166, 231);
+   box-shadow: 3px 2px 3px #A5D7E8;
+}
+.tuvan button{
+   background-color: rgb(17, 166, 231);
+   color: white;
+   font-weight: bold;
+}
 
 /*phần footer*/
 

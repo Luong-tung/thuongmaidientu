@@ -1,4 +1,6 @@
-var counte = 1;
+alert("Rất vui chào mừng Bạn đến với sản phẩm của nhóm 20")
+confirm("Bạn đã sẵn sàng chưa?")
+var counter = 1;
 setInterval( () =>{
     document.getElementById('radio' + counter).checked = true;
     counter++;
@@ -6,4 +8,4 @@ setInterval( () =>{
 
         counter =1;
     }
-},5000);
+},2500);

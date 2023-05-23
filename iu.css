@@ -235,20 +235,22 @@ header{
    padding: 2px 3px;
    font-weight: 400;
    color: white;
-   background-color: #27374D;
+  
    padding: 2px;
    cursor: pointer;
-   border-radius: 10%;
    box-shadow: 2px 2px 2px;
    border-color: #27374D;
 }
 
  
-   
-
 .thanheading-timkiem-navbar li:hover a{
-  color: white
-   }
+  color: white;
+  background-color: #19376D;
+}
+.thanheading-timkiem-navbar li:hover{
+   transform: translateY(-2px);
+}
+
 .thanheading-timkiem-navbar a{
    text-decoration: none;
    color: white;
@@ -629,7 +631,7 @@ main .banner{
    font-weight: bold;
    padding: 2px;
    border: 1px solid rgb(17, 166, 231);
-   background-color: rgb(17, 166, 231);
+   
    box-shadow: 3px 2px 3px #A5D7E8;
 }
 .tuvan button{
